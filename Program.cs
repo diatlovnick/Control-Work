@@ -4,7 +4,20 @@ string[] array =  {"12", "23", "-1111", "dd", "=)_"};
 
 printArray(array);
 
-
+string[] GetLengthArray(string[] array, int length)
+{
+    string[] resArray = new string[length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        string str;
+        str = array[i];
+        if (str.Length < 4)
+        {
+            resArray[i]= str;
+        }
+    }
+    return resArray;
+}
 
 int GetLengthArray(string[] array)
 {
